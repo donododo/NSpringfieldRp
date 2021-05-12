@@ -15,7 +15,7 @@ public class ZonesRegistry{
 	
 	
 	public ZonesRegistry() {
-		this.zonesRegistry = new ArrayList<Zone>();
+		zonesRegistry = new ArrayList<Zone>();
 	}
 	
 	public void load() {
