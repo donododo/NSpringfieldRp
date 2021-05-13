@@ -21,4 +21,5 @@ public class DefaultRpLevelStorage implements Capability.IStorage<IRpLevel>{
 		// TODO Auto-generated method stub
 		instance.setRpLevel(Integer.parseInt(nbt.getAsString()));
 	}
+	
 }

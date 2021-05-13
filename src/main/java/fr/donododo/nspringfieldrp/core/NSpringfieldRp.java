@@ -3,6 +3,8 @@ package fr.donododo.nspringfieldrp.core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fr.donododo.nspringfield.registries.NetworksRegistry;
+import fr.donododo.nspringfieldrp.capabilities.rplevel.CapabilityRpLevel;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -23,8 +25,8 @@ public class NSpringfieldRp {
 	private void setup(final FMLCommonSetupEvent event) {
 
 		LOGGER.info("[ NSpringfieldRp ] Setup Commun.");
-		
-		//CapabilityRpLevel.register();
+		CapabilityRpLevel.register();
+		NetworksRegistry.registerNetworkPackets();
 		
 	}
 	
